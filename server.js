@@ -28,7 +28,7 @@ app.use(express.json());
 
 app.use(cors())
 app.get('/', (req,res) => {
-	res.send(db.user);
+	res.send(database.users);
 })
 
 //signin -> POST = success/fail
